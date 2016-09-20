@@ -1,0 +1,16 @@
+#%Module
+#
+proc ModulesHelp { } {
+        puts stderr " "
+        puts stderr "\t This module installs anaconda"
+        puts stderr " "
+}
+
+conflict anaconda/python2
+
+module-whatis   "installs anaconda"
+
+set package_root /home/srinivm/Ubuntu-14.04/software/anaconda3
+                 
+
+prepend-path PATH ${package_root}/bin

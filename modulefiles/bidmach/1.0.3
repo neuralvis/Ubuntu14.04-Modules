@@ -1,0 +1,14 @@
+#%Module
+#
+proc ModulesHelp { } {
+        puts stderr " "
+        puts stderr "\t This module installs elixir"
+        puts stderr " "
+}
+
+module-whatis   "installs elixir "
+
+set package_root /home/srinivm/Ubuntu-14.04/software/bidmach/BIDMach_1.0.3-linux-x86_64
+                 
+
+prepend-path PATH ${package_root}
